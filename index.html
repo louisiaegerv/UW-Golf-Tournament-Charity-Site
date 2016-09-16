@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="app-event" ng-cloak>
+
+  <head>
+    <title>UW Golf Tournament 2016</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/urlIcon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link link type="text/css"  rel="stylesheet" href="css/elements.css" />
+    <link rel="stylesheet" href="css/custom.css" />  
+  </head>
+    
+  <body>
+    <div class="body-container"> 
+      <nav id='header' class="simple group">
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <a ng-href="#/">
+              <div class="logo">
+                <img class src="img/ball2.png" alt="">
+                <p>UW<span>Golf</span></p>
+              </div>
+            </a>
+          </div>
+          <ul>
+            <li><a href="#/register">Register</a></li>
+            <!--<li class="last-top-utility">
+              <a href="#/FAQ">FAQ</a>
+            </li>-->
+          </ul>
+        </div>
+      </nav>
+    
+      <div class="middle">
+        <!-- View-->
+        <div class="view" ng-view autoscroll="true"></div>
+      </div>      
+    
+      <footer class="slim EM-grey_bg dark">
+        <div class="inner group">
+          <div class="logo">
+            <a  href="http://ishareteam4.na.xom.com/sites/ONE_EMIT/Pages/Home.aspx">ONE EMIT
+            </a>
+          </div>
+        </div>
+      </footer>
+    
+    <!-- end of body container-->
+    </div>
+  </body>
+  
+  <!-- load angular -->
+  <script src="js/jquery-min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/angular/angular-animate.min.js"></script>
+  <script src="js/angular/angular-route.min.js"></script>
+  <script src="js/angular/controller.js"></script>
+  <script src="js/angular/app.js"></script>
+</html>

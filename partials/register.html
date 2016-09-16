@@ -1,0 +1,74 @@
+<div class="container">
+    <div id="registerContainer">
+        <div class="row responsive-text">
+            <h1>United Way Golf Tournament Sign Up</h1>
+            <p>Please fill out the following form to register for the United Way Golf Tournament</p>
+        </div>
+        <form>
+            <div class="row responsive-text">
+                <!-- Text -->
+                <h3 name="name" for="ParticipantName">Name</h3>
+                <input type="text" class="form-control" name="ParticipantName" ng-model="form.name" id="NameApplicant" placeholder="John Doe" required>
+
+                <!-- Error Checking  -->
+                <div ng-show="noName" class="alert alert-warning" role="alert">
+                    <a href="#" class="alert-link">Please enter Name</a>
+                </div>
+            </div>
+            <div class="row responsive-text">
+                <!-- Email -->
+                <h3 for="ParticipantEmail">Email</h3>
+                <!-- ng-model is the variable that will show in the controller-->
+                <input type="email" class="form-control" name="ParticipantEmail" ng-model="form.email" id="emailApplicant" placeholder="john.doe@exxonmobil.com" required>
+
+                <!-- Error Checking  -->
+                <div ng-show="noEmail" class="alert alert-warning" role="alert">
+                    <a href="#" class="alert-link">Please enter Email</a>
+                </div>
+                <br/>
+            </div>
+            <div class="row responsive-text">            
+                <h3>Which golfers would you would like to play with?</h3>
+                <input type="text" class="form-control" name="friend1" ng-model="form.friend1" id="Friend1" placeholder="John Doe" required/>
+                <br/>
+                <input type="text" class="form-control" name="friend2" ng-model="form.friend2" id="Friend2" placeholder="John Doe" required/>
+                <br/>
+                <input type="text" class="form-control" name="friend3" ng-model="form.friend3" id="Friend1" placeholder="John Doe" required/>
+            </div>      
+            <div class="row responsive-text">
+                <h3>What is your golf handicap?</h3>
+                <input type="text" class="form-control" name="handicap" ng-model="form.handicap" id="handicap" placeholder="Enter Handicap" required/>
+                <!-- Error Checking  -->
+                <div ng-show="noHandicap" class="alert alert-warning" role="alert">
+                    <a href="#" class="alert-link">Please enter Handicap</a>
+                </div>
+            </div>               
+        </form>
+        <div class="row responsive-text ">
+            <h2>Registration Fee: ${{total}}</h2>            
+            <script src="js/paypal-button.min.js?merchant=gavin.h.gee-facilitator@exxonmobil.com" data-button="buynow" data-name="EMCCUWGolfTournament" data-amount="{{total}}" data-currency="USD" data-return="https://ishareteam1.na.xom.com/sites/hunitedway/UWBasketball/site/index.html#/done" data-env="sandbox" async></script>
+        </div>
+        <div class="row responsive-text">
+            <br/>
+            <p>Once your payment is complete, finalize your registration by entering your paypal transaction id** and clicking below:</p>
+            <br/>
+            <!-- Confirmation Number -->
+            <div class="col s12 m3">Transaction ID</div>
+            <div class="col s12 m6">
+                <input type="text" class="form-control" name="confirmation" ng-model="form.confirmation" required>
+            
+                <!-- Error Checking  -->
+                <div ng-show="noConfirmation" class="alert alert-warning" role="alert">
+                    <a href="#" class="alert-link">Please enter Paypal Transaction ID</a>
+                </div>
+            </div>
+            <div class="col s12">
+                <p class="check">**If paying by check please enter “Check” and give the check to Melanie Miller E4.4A.501. <br> Make checks out to “United Way Golf Tournament”.**</p>
+            </div>
+        </div>
+        <div class="row responsive-text">
+            <button class="btn-primary registerButton" ng-click="validateInput()" href="#register">Register</button>
+        </div>
+        <br/>
+    </div>
+</div>

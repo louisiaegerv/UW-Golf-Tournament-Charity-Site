@@ -1,0 +1,358 @@
+/*---- Variable Classes ----*/
+.center {
+  text-align: center;
+  margin: 0 auto; }
+
+.right {
+  text-align: right; }
+
+
+/*--- Index Styling ---*/
+
+html
+{
+  /*width: 100%;
+  height: 100%;*/
+  margin: 0px;
+  padding: 0px;
+	background-color: #bcbec0;
+  background-image: url('../img/course.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  background-attachment: fixed;  
+  }
+  .body-container{
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 10px 30px black;
+  	background-color: white;
+  	padding:0;
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1200px;
+    min-width: 100px; }
+    #header {
+      position: fixed;
+      z-index: 5;
+      box-shadow: none;
+      max-width: 1200px;
+      background: #543118;
+      margin-top: 0px;
+      top: 0;
+      width: 92%;
+      border-radius: 0px 0px 0 0; }
+      #header .logo {
+        height: 0;
+        opacity: 1;
+        transition: .2s;
+        background-color: red;  }
+      #header .logo:hover {
+        opacity: .7;
+        transition: .2s; }
+        .logo img {
+          height: 36px;
+          display: inline-block;
+          position: relative; 
+          top: 5px; }
+        .logo p {
+          display: inline-block; }
+      #header li {
+        margin-right: 20px; }
+    .middle {
+      margin: 0;
+      padding: 0; }
+      .view {
+        padding: 0;
+        margin: 0;
+        background: #fff;  }
+    footer.slim {
+      color: white;
+       }
+      footer a{
+        opacity: 0.75;
+        padding-bottom: 5px;
+        border-bottom: 3px solid rgba(255, 255, 255, 0); }
+      footer a:hover {
+        border-bottom: 2px solid #FFF;
+        opacity: 1; }
+
+/*---Home Page Styling---*/
+.firstContainer {
+  background: url('../img/argyle.png') fixed;
+  height: 700px;
+  overflow: hidden;
+  transition: all .5s; }
+  .firstContainer img {
+    display: block;
+    margin: 50px auto;
+    height: 80%; }
+    .img1 {
+      animation: fadeInOut 2.5s linear forwards;
+      animation-delay: .5s;
+      opacity: 0;
+    }
+    .img2 {
+      animation: fadeIn .5s linear forwards;
+      animation-delay: 3.1s;
+      opacity: 0;
+      position: relative;
+      top: -600px;
+    }
+  .tourInfo {
+    color: white;
+    top: -40px;
+    font-size: 1.5em;
+    right: 10px;
+    position: relative; }
+    .tourInfo a {
+      color:orange;
+    }
+    .tourInfo a:hover {
+      color:cyan;
+    }
+
+  .second {
+    color: white;
+    height: 700px;
+    background: url('../img/patterns/contest.png') fixed;
+    margin-top: 0;
+    overflow: hidden; }
+    .featuring h1 {
+      margin-top: 50px;
+      letter-spacing: 2px;
+      font-size: 3em;
+      text-shadow: 2px 2px black; }
+    .knockoutContainer {
+      padding: 50px;
+      margin: 0; }
+      .knockoutContainer img, .threePointContainer img {
+        padding: 30px 0 30px 0; 
+        max-width: 80%;
+        transition: all .2s;
+        border-radius:15px;  }
+      .knockoutContainer img:hover{
+        background: rgba(255, 255, 255, .7);
+        box-shadow: 4px 8px 30px rgba(0,0,0,.4), 4px 8px 0px rgba(0,0,0,1) ; }
+      .threePointContainer img:hover{
+        background: rgba(0,0,0,.7); 
+        box-shadow: 4px 8px 30px rgba(255,255,255,.4), 4px 8px 0px rgba(255,255,255,1); }
+    .contestInfo {
+      position: relative;
+      top: 30px; }
+  .secondContainer{
+  	text-align: center; 
+    margin-top: 0px;
+    padding: 50px 50px; }
+  #rowRegister{
+    height: 200px;
+    padding: 100px;
+    text-align: center;}
+  #rowSaveDate {
+    height: 200px;
+    padding:100px;
+    text-align: center;}
+       
+/*---- Register Page Styling ----*/     
+#registerContainer {
+  padding: 50px 30px 0 30px; }
+  #registerContainer form {
+    padding-top: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+    #registerContainer form .row {
+      padding-bottom: 20px; }
+    .lunchRow {
+      position: relative;
+      z-index: 2; }
+      .lunchLink {
+        color: blue;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255,255,255,0); }
+      .lunchLink:hover { 
+        border-bottom: 1px solid blue; }
+    .paymentRow {
+      position: relative;
+      top: -70px;
+      z-index: 1; }
+      .fee {
+        position: relative;
+        top:90px;
+        left:120px; }
+    .confirmationRow {
+      position: relative;
+      top: -50px; }
+      .check {
+        font-size: 1.5rem;
+        margin: 30px 0; }
+    .registerButton {
+      margin-top: 40px;
+    }
+
+.teamContainer td{
+  padding-right: 10%;
+}
+  .teamContainer img{
+    max-width: 150px;
+    min-width: 25px;
+    height: auto;
+    border-radius: 10px;
+    width: 200%;
+  }
+/*---- Button Styling ----*/
+.btn-primary {
+  background-color: #543118;
+  margin: 1.2rem 0;}
+  .btn-primary:hover{
+    background-color: #00a14d; }
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+.alert h4 {
+  margin-top: 0;
+  color: inherit; }
+.alert .alert-link {
+  font-weight: bold; }
+.alert > p,
+.alert > ul {
+  margin-bottom: 0; }
+.alert > p + p {
+  margin-top: 5px; }
+.alert-dismissable,
+.alert-dismissible {
+  padding-right: 35px; }
+.alert-dismissable .close,
+.alert-dismissible .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit; }
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6; }
+.alert-success hr {
+  border-top-color: #c9e2b3; }
+.alert-success .alert-link {
+  color: #2b542c; }
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1; }
+.alert-info hr {
+  border-top-color: #a6e1ec; }
+.alert-info .alert-link {
+  color: #245269; }
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc; }
+.alert-warning hr {
+  border-top-color: #f7e1b5; }
+.alert-warning .alert-link {
+  color: #66512c; }
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1; }
+.alert-danger hr {
+  border-top-color: #e4b9c0; }
+.alert-danger .alert-link {
+  color: #843534; }
+
+/*---- Fade Animation ----*/
+@-webkit-keyframes fadeInOut {
+  25%, 75% { opacity: 1; display: block; }
+}
+
+@keyframes fadeInOut {
+  25%, 75% { opacity: 1; display: block; }
+}
+
+@-webkit-keyframes fadeIn {
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  100% { opacity: 1; }
+}
+
+/*---- Responsive Sizing ----*/
+@media screen and (max-width: 940px) {
+  .tourInfo {
+    font-size: 1em; }
+  .firstContainer {
+    height: 475px; }
+  .img2 {
+    top: -425px; } 
+  .second {
+    height: 500px; }
+}
+
+@media screen and (max-width: 602px) {
+  .tourInfo {
+    font-size: .8em; }
+  .firstContainer {
+    height: 400px; }
+  .img2 {
+    top: -380px; } 
+  .second {
+    height: 1000px; }
+  .threePointContainer {
+    margin-top: 40px; }
+}
+
+@media screen and (max-width: 440px) {
+  .logo img {
+    height: 30px; }
+  .logo p {
+    font-size: .6em; }
+  .tourInfo {
+    font-size: .7em; }
+  .firstContainer {
+    height: 250px; }
+  .img2 {
+    top: -275px; } 
+  .second {
+    height: 800px; }
+  .second h1 {
+    font-size: 1.5em; }
+  .secondContainer {
+    padding: 50px 10px; }
+  .secondContainer li {
+    font-size: 10px; }
+  .fee {
+    position: static;
+    margin-top: 70px; }
+  .secondContainer .btn-primary {
+    font-size: 1rem; 
+    padding: 1.25rem 3rem; }
+}
+
+@media screen and (max-width: 320px) {
+  .logo p {
+    font-size:.55em; }
+  .logo img {
+    height: 24px;
+    margin-right: 0px;
+    padding-right: 0px;  }
+  .tourInfo {
+    font-size: .5em; }
+  .firstContainer {
+    height: 200px; }
+  .firstContainer img {
+    height: 50%; } 
+    .img2 {
+      top: -150px; }
+  nav li {
+    display: none; }
+  #registerContainer h1 {
+    font-size: 1.5em; }
+  .second {
+    height: 600px; }
+}
