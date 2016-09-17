@@ -10,4 +10,7 @@ Technology and Features:
 - Responsive and UX-driven
 - Custom graphics made with Pixlr (free Photoshop)
 
-![Alt text](https://raw.githubusercontent.com/louisiaegerv/UW-Golf-Tournament-Charity-Site/master/img/golfSite.jpg "United Way Golf Tournament Charity Site")
+======
+[Click here](https://louisiaegerv.github.io/UW-Golf-Tournament-Charity-Site/) to view a demo of the site.
+------
+[<img src="https://raw.githubusercontent.com/louisiaegerv/UW-Golf-Tournament-Charity-Site/master/img/golfSite.jpg">](https://louisiaegerv.github.io/UW-Golf-Tournament-Charity-Site/)
