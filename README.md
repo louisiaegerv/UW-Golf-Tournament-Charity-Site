@@ -13,4 +13,4 @@ Technology and Features:
 ======
 [Click here](https://louisiaegerv.github.io/UW-Golf-Tournament-Charity-Site/) to view a demo of the site.
 ------
-[<img src="https://raw.githubusercontent.com/louisiaegerv/UW-Golf-Tournament-Charity-Site/master/img/golfSite.jpg">](https://louisiaegerv.github.io/UW-Golf-Tournament-Charity-Site/)
+[<img src="https://raw.githubusercontent.com/louisiaegerv/Project-Images/master/golfSite.jpg">](https://louisiaegerv.github.io/UW-Golf-Tournament-Charity-Site/)
